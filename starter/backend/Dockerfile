@@ -3,7 +3,7 @@ ENV FLASK_RUN_HOST=0.0.0.0
 
 WORKDIR /
 RUN adduser -u 1000 -D app
-RUN apk update && \
+RUN apk update && apk upgrade && \
   apk add \
   pcre \
   pcre-dev \
